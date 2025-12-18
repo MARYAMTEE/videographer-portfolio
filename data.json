@@ -1,0 +1,31 @@
+{
+  "clients": {
+    "john-wedding": {
+      "password": "john123",
+      "expiresAt": "2025-12-31T23:59:59Z",
+      "title": "John & Aisha Wedding",
+      "files": [
+        {
+          "type": "video",
+          "src": "https://media.yourbrand.com/john-wedding/video-4k.mp4"
+        },
+        {
+          "type": "image",
+          "src": "https://media.yourbrand.com/john-wedding/photo.jpg"
+        }
+      ]
+    },
+
+    "brand-x": {
+      "password": "brandx456",
+      "expiresAt": "2025-12-31T23:59:59Z",
+      "title": "Brand X Campaign",
+      "files": [
+        {
+          "type": "video",
+          "src": "https://cdn.yourstorage.com/brandx-ad.mov"
+        }
+      ]
+    }
+  }
+}
