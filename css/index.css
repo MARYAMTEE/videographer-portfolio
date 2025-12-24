@@ -52,6 +52,7 @@ a {
   padding: 1rem;
   background-color: rgba(11, 11, 13, 0.75);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transform: translateX(100%);
   transition: transform 0.5s ease-in-out;
   z-index: 10;
@@ -111,48 +112,10 @@ a {
   letter-spacing: 0.5px;
 }
 
-.nav-links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--bg-soft);
-}
-.nav-menu {
-    height: 100%;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.nav-links.active {
-  display: flex;
-  animation: slideDown var(--transition-slow);
-}
-
-.nav-link {
-  font-size: clamp(1.1rem, 3vw, 1.75rem);
-  letter-spacing: 10px;
-  padding: 1rem 1.25rem;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-  transition: background var(--transition-fast);
-}
-
-.nav-links a:hover {
-  background: var(--accent-soft);
-
-@keyframes slideDown {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-}
-
     /* HERO SECTION */
 .hero {
   min-height: 100vh;
-  padding: 7rem 1.25rem 4rem;
+  padding: 0 1.25rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,7 +127,7 @@ a {
   width: 100%;
   max-width: 43.75rem;
   margin-inline: auto;
-  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-size: clamp(2rem, 6vw, 3rem);
   font-weight: 800;
   line-height: 1.15;
   animation: fadeUp 0.8s ease forwards;
@@ -241,15 +204,53 @@ a {
       background: #111116;
     }
 
-    /* =====================
-       FOOTER
-    ====================== */
-    .site-footer {
-      padding: 2rem 1.25rem;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
+/* STACK IMAGES */
+.stack {
+  position: relative;
+  height: 18.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 6.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: center;
+  border: 4px solid #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+  transition: transform 0.4s ease;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* Individual positioning */
+.card-1 {
+  transform: translate(-50%, -50%) rotate(-12deg) translateX(-110px);
+}
+
+.card-2 {
+  transform: translate(-50%, -50%) rotate(-5deg) translateX(-35px) translateY(30px);
+}
+
+.card-3 {
+  transform: translate(-50%, -50%) rotate(5deg) translateX(45px);
+}
+
+.card-4 {
+  transform: translate(-50%, -50%) rotate(12deg) translateX(110px) translateY(30px);
+}
+
+/* FOOTER */
+.site-footer {
+  padding: 2rem 1.25rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
 
   /* MEDIA QUERIES */
 @media (min-width: 768px) {
@@ -311,13 +312,39 @@ a {
     border: none;
   }
 
-  /* .hero {
-    padding-left: 4rem;
-  } */
+  .hero {
+    padding-block: 4rem;
+  } 
 
   .services-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  /* STACK FOR MEDIUM SCREEN */
+  .stack {
+    height: 22rem;
+  }
+
+  .card {
+    width: 13rem;
+    height: 16rem;
+  }
+
+  .card-1 {
+    transform: translate(-50%, -50%) rotate(-14deg) translateX(-230px);
+  }
+
+  .card-2 {
+    transform: translate(-50%, -50%) rotate(-6deg) translateX(-70px) translateY(40px);
+  }
+
+  .card-3 {
+    transform: translate(-50%, -50%) rotate(6deg) translateX(100px);
+  }
+
+  .card-4 {
+    transform: translate(-50%, -50%) rotate(14deg) translateX(250px) translateY(40px);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -337,22 +364,27 @@ a {
   .nav {
     padding: 1.25rem 4rem;
   }
-}
-@media (min-width: 1024px) {
-  .hero {
-    max-width: 1100px;
-    margin: 0 auto;
+  
+
+
+  .card {
+    width: 16rem;
+    height: 18rem;
   }
 
-  .services {
-    padding: 6rem 2rem;
+  .card-1 {
+    transform: translate(-50%, -50%) rotate(-6deg) translateX(-310px);
   }
 
-  .services-grid {
-    gap: 2rem;
+  .card-2 {
+    transform: translate(-50%, -50%) rotate(-6deg) translateX(-110px) translateY(20px);
   }
 
-  .nav {
-    padding: 1.25rem 4rem;
+  .card-3 {
+    transform: translate(-50%, -50%) rotate(8deg) translateX(130px);
+  }
+
+  .card-4 {
+    transform: translate(-50%, -50%) rotate(6deg) translateX(330px) translateY(30px);
   }
 }
