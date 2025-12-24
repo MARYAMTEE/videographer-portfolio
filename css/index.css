@@ -79,6 +79,7 @@ a {
 
 .nav__item.active {
   background-color: var(--accent);
+  border-radius: var(--radius);
 }
 
 .nav__item:not(:last-child) {
@@ -88,7 +89,7 @@ a {
 .nav__link {
   display: block;
   padding-block: 1.5rem;
-  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-size: clamp(1.25rem, 2vw, 1.25rem);
   letter-spacing: 0.03em;
 }
 
@@ -187,7 +188,7 @@ a {
   display: inline-block;
   padding: 0.85rem 1.4rem;
   background: var(--accent);
-  color: #000;
+  color: white;
   font-weight: 600;
   border-radius: var(--radius);
   width: fit-content;
