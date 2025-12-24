@@ -1,5 +1,5 @@
 :root {
-    --bg-main: #0b0b0b;
+    --bg-main: hsl(0, 0%, 4%);
     --bg-card: #161616;
     --bg-media: #000;
     --text-main: #ffffff;
@@ -8,6 +8,7 @@
     --text-footer: #777777;
     --btn-bg: #ffffff;
     --btn-text: #000000;
+    --accent: #C9A24D;
 
     --radius-sm: 8px;
     --radius-md: 10px;

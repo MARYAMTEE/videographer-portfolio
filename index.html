@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IfeShotthis – Mobile Videographer</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/script.js" defer></script>
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="download.html">download</a></li>
-        </ul>
-    </nav>
+    <header class="portfolio__header">
+        <div class="porfolio__logo">IfeShotthis</div>
+
+         <button type="button" class="portfolio__nav portfolio__nav--open" aria-label="Navigation icon">
+            <i class="fa-solid fa-list-check nav__open"></i>
+        </button>
+
+        <!-- NAV -->
+        <nav class="nav">
+          <button type="button" class="portfolio__nav portfolio__nav--close" aria-label="Navigation icon">
+            <i class="fas fa-times nav__close" aria-hidden="true"></i>
+          </button>
+
+          <ul class="nav__list">
+              <li class="nav__item active"><a href="index.html" class="nav__link">Home</a></li>
+              <li class="nav__item"><a href="work.html" class="nav__link">Work</a></li>
+              <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+              <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="">
+      <h1 class="hero-title">Mobile videography that keeps its quality.</h1>
+      <p class="hero-text">
+        I help brands and individuals tell stories with mobile video — without
+        sacrificing clarity, resolution, or detail.
+      </p>
+    </div>
+    <div class="cta">
+        <a hre ="work.html" class="hero-cta">View My Work</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <h2 class="section-title">What I Do</h2>
+    <div class="services-grid">
+      <div class="service">Mobile Videography</div>
+      <div class="service">Creative Editing</div>
+      <div class="service">Short-form Content</div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    © 2025 Ayo Visuals. Built to showcase work in original quality.
+  </footer>
+
+
 </body>
 </html>
