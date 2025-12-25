@@ -303,7 +303,7 @@ a {
 
 /* HOW I WORK SECTION */
 .process {
-  padding: 3rem 1.25rem;
+  padding: 4rem 1.25rem;
   background-color: var(--bg);
 }
 
@@ -379,11 +379,81 @@ a {
 }
 
 /* FOOTER */
-.site-footer {
-  padding: 2rem 1.25rem;
-  text-align: center;
+.footer {
+  background-color: var(--bg-soft);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer__inner {
+  padding: 4rem 1.25rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+.footer__logo {
+  font-size: 1.4rem;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.footer__tagline {
   color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.footer__link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: var(--text-main);
+}
+
+.footer__cta-text {
+  color: var(--text-main);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer__button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent);
+  color: #000;
   font-size: 0.9rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px var(--accent-soft);
+}
+
+.footer__bottom {
+  padding: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.footer__copyright {
+  color: var(--text-muted);
+  font-size: 0.8rem;
 }
 
   /* MEDIA QUERIES */
@@ -484,11 +554,17 @@ a {
 
   /* HOW I WORK SECTION */
   .process {
-    padding: 4rem 3rem;
+    padding: 4rem 1.25rem;
   }
 
   .process__steps {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* FOOTER */
+  .footer__inner {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    align-items: start;
   }
 }
 
@@ -533,10 +609,19 @@ a {
 
   /* HOW I WORK SECTION */
   .process {
-    padding: 5rem 6rem;
+    padding: 5rem 2rem;
   }
 
   .process__steps {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* FOOTER */
+  .footer__inner {
+    padding: 4rem 2rem 3rem;
+  }
+
+  .footer__bottom {
+    padding: 1.5rem 6rem;
   }
 }
