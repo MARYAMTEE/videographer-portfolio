@@ -39,17 +39,16 @@ a {
   color: inherit;
 }
 
-    /* NAVIGATION
-    ====================== */
+    /* NAVIGATION */
 .portfolio__header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--deep-plum);
-    position: relative;
-    top: 0;
-    padding: 1rem;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--deep-plum);
+  position: relative;
+  top: 0;
+  padding: 1rem;
+  z-index: 1000;
 }
 
 .nav {
@@ -98,7 +97,7 @@ a {
 
 .nav__link {
   display: block;
-  padding-block: 1.5rem;
+  padding-block: 1rem;
   font-size: clamp(1.25rem, 2vw, 1.25rem);
   letter-spacing: 0.03em;
 }
@@ -113,7 +112,7 @@ a {
 }
 
 .nav__open, .nav__close{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .nav-brand {
@@ -123,7 +122,7 @@ a {
 
     /* HERO SECTION */
 .hero {
-  min-height: 100vh;
+  min-height: calc(100vh - 5rem);
   padding: 0 1.25rem 0;
   display: flex;
   flex-direction: column;
@@ -192,7 +191,7 @@ a {
 }
 
 .section-title {
-  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  font-size: clamp(1.6rem, 5vw, 2rem);
   margin-bottom: 1.5rem;
 }
 
@@ -224,8 +223,11 @@ a {
   background-color: var(--accent);
   border-radius: var(--radius);
 }
+
 .service-icon {
-  font-size: 2rem;
+  font-size: 40px;
+  font-weight: 100;
+  color: #ffffff;
 }
 
 .service-title {
@@ -313,7 +315,7 @@ a {
 }
 
 .process__title {
-  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  font-size: clamp(1.6rem, 5vw, 2rem);
   margin-bottom: 0.75rem;
   color: var(--text-main);
 }
@@ -495,7 +497,7 @@ a {
 }
 
 .nav__link {
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
 }
 
   .portfolio__header{
@@ -570,7 +572,9 @@ a {
 
 @media (min-width: 1024px) {
   .hero {
-    max-width: 1100px;
+    width: 100%;
+    max-width: 68.75rem;
+    padding-block: 6rem;
     margin: 0 auto;
   }
 
