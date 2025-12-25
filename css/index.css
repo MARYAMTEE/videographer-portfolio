@@ -192,7 +192,7 @@ a {
 }
 
 .section-title {
-  font-size: 1.5rem;
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
   margin-bottom: 1.5rem;
 }
 
@@ -229,7 +229,7 @@ a {
 }
 
 .service-title {
-  font-weight: 600;
+    font-size: 1.15rem;
 }
 
 /* STACK IMAGES */
@@ -299,6 +299,83 @@ a {
   transform: translate(-50%, -50%) rotate(12deg) translateX(110px) translateY(30px);
   animation: slide-right 0.9s ease-out forwards;
   animation-delay: 0.15s;
+}
+
+/* HOW I WORK SECTION */
+.process {
+  padding: 3rem 1.25rem;
+  background-color: var(--bg);
+}
+
+.process__header {
+  max-width: 37.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.process__title {
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  margin-bottom: 0.75rem;
+  color: var(--text-main);
+}
+
+.process__subtitle {
+  color: var(--text-muted);
+  font-size: clamp(0.95rem, 3vw, 1.05rem);
+}
+
+.process__steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.process__card {
+  background-color: var(--bg-soft);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+}
+
+.process__card:hover {
+  transform: translateY(-4px);
+  background-color: var(--bg-hover);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.process__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(120deg, transparent,var(--accent-soft), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.process__card:hover::before {
+  opacity: 1;
+}
+
+.process__number {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.process__step-title {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+}
+
+.process__text,
+.service-text {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 /* FOOTER */
@@ -404,6 +481,15 @@ a {
   .card-4 {
     transform: translate(-50%, -50%) rotate(14deg) translateX(250px) translateY(40px);
   }
+
+  /* HOW I WORK SECTION */
+  .process {
+    padding: 4rem 3rem;
+  }
+
+  .process__steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -424,8 +510,6 @@ a {
     padding: 1.25rem 4rem;
   }
   
-
-
   .card {
     width: 16rem;
     height: 18rem;
@@ -445,5 +529,14 @@ a {
 
   .card-4 {
     transform: translate(-50%, -50%) rotate(6deg) translateX(330px) translateY(30px);
+  }
+
+  /* HOW I WORK SECTION */
+  .process {
+    padding: 5rem 6rem;
+  }
+
+  .process__steps {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
