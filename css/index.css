@@ -18,6 +18,14 @@
   box-sizing: border-box;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--bg);
@@ -55,7 +63,7 @@ a {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transform: translateX(100%);
-  transition: transform 0.5s ease-in-out;
+  transition: transform var(--transition-slow) ease-in-out;
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -227,7 +235,7 @@ a {
 /* STACK IMAGES */
 .stack {
   position: relative;
-  height: 18.75rem;
+  height: 15rem;
   display: flex;
   justify-content: center;
 }
@@ -242,26 +250,55 @@ a {
   border-radius: var(--radius);
   box-shadow: 0 20px 40px rgba(0,0,0,0.45);
   transition: transform 0.4s ease;
+  transform-origin: center;
   object-fit: cover;
   object-position: center;
+  opacity: 0;
+}
+
+/* CARD ANIMATION */
+@keyframes slide-left {
+  from {
+    transform: translate(-150%, -50%) rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translate(50%, -50%) rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 
 /* Individual positioning */
 .card-1 {
   transform: translate(-50%, -50%) rotate(-12deg) translateX(-110px);
+  animation: slide-left 0.9s ease-out forwards;
 }
 
 .card-2 {
   transform: translate(-50%, -50%) rotate(-5deg) translateX(-35px) translateY(30px);
+  animation: slide-left 0.9s ease-out forwards;
+  animation-delay: 0.15s;
 }
 
 .card-3 {
   transform: translate(-50%, -50%) rotate(5deg) translateX(45px);
+  animation: slide-right 0.9s ease-out forwards;
 }
 
 .card-4 {
   transform: translate(-50%, -50%) rotate(12deg) translateX(110px) translateY(30px);
+  animation: slide-right 0.9s ease-out forwards;
+  animation-delay: 0.15s;
 }
 
 /* FOOTER */
@@ -285,6 +322,8 @@ a {
     transition: none;
     transform: none;
     padding: 0;
+    transform: translateX(0);
+    backdrop-filter: none
   }
 
   .nav.toggle {
