@@ -1,4 +1,4 @@
-const gallery = document.getElementById("workGallery");
+const gallery = document.querySelector("#workGallery");
 
 fetch("data.json")
   .then(res => res.json())
@@ -19,12 +19,7 @@ fetch("data.json")
 
         if (file.type === "image") {
           card.innerHTML = `
-            <img
-              class="work-media"
-              src="${file.src}"
-              alt="${client.title}"
-              loading="lazy"
-            />
+            <img class="work-media" src="${file.src}" alt="${client.title}" loading="lazy"/>
             <div class="work-caption">${client.title}</div>
           `;
         }
