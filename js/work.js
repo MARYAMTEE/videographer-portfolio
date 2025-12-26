@@ -8,19 +8,19 @@ fetch("data.json")
     Object.values(clients).forEach(client => {
       client.files.forEach(file => {
         const card = document.createElement("div");
-        card.className = "work-card";
+        card.className = "work__card";
 
         if (file.type === "video") {
           card.innerHTML = `
-            <video class="work-media" src="${file.src}" controls preload="metadata" playsinline></video>
-            <div class="work-caption">${client.title}</div>
+            <video class="work__media" src="${file.src}" controls preload="metadata" playsinline></video>
+            <div class="work__caption">${client.title}</div>
           `;
         }
 
         if (file.type === "image") {
           card.innerHTML = `
-            <img class="work-media" src="${file.src}" alt="${client.title}" loading="lazy"/>
-            <div class="work-caption">${client.title}</div>
+            <img class="work__media" src="${file.src}" alt="${client.title}" loading="lazy"/>
+            <div class="work__caption">${client.title}</div>
           `;
         }
 
