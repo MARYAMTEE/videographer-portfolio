@@ -32,3 +32,29 @@ fetch("data.json")
     gallery.innerHTML = "<p>Unable to load work.</p>";
     console.error(err);
   });
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+function animateWorkCards() {
+  const cards = document.querySelectorAll(".work__card");
+
+  cards.forEach((card, index) => {
+    // Alternate direction
+    card.classList.add(
+      index % 2 === 0 ? "from-left" : "from-right"
+    );
+
+    observer.observe(card);
+  });
+}
+animateWorkCards();
