@@ -200,6 +200,27 @@ a {
   font-size: 0.8rem;
 }
 
+/* CARD ANIMATION */
+@keyframes slide-left {
+  from {
+    transform: translate(-150%, -50%) rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translate(50%, -50%) rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 768px) {
     /* NAVIGATION */
     .nav{
