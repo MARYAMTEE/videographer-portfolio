@@ -119,39 +119,19 @@
 }
 
 .gradient-icon {
-  background: linear-gradient(
-    135deg,
-    #FFD84D,
-    #FFB703,
-    #FF7A18,
-    #FF3CAC
-  );
+  background: linear-gradient(135deg,#FFD84D,#FFB703,#FF7A18,#FF3CAC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .phone-gradient {
-  background: linear-gradient(
-    135deg,
-    #1f2933 0%,   /* dark charcoal */
-    #374151 35%,  /* slate gray */
-    #6b7280 70%,  /* soft gray */
-    #9ca3af 100%  /* light metallic edge */
-  );
-
+  background: linear-gradient(135deg,#1f2933 0%,#374151 35%,#6b7280 70%,#9ca3af 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .film-gradient {
-  background: linear-gradient(
-    135deg,
-    #0f172a 0%,   /* near black */
-    #1f2937 40%,  /* deep slate */
-    #dc2626 70%,  /* cinema red */
-    #ef4444 100%  /* bright reel red */
-  );
-
+  background: linear-gradient(135deg,#0f172a 0%, #1f2937 40%,#dc2626 70%,#ef4444 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
