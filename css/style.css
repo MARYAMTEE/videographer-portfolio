@@ -13,7 +13,7 @@
   width: 100%;
   max-width: 43.75rem;
   margin-inline: auto;
-  font-size: clamp(2rem, 6vw, 3rem);
+  font-size: clamp(2.2rem, 6vw, 3.2rem);
   font-weight: 800;
   line-height: 1.15;
   animation: fadeUp 0.8s ease forwards;

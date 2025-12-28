@@ -147,20 +147,20 @@ a {
 }
 
 .footer__list {
-    list-style: none;
+  list-style: none;
 }
 
 .footer__item:not(:last-child) {
-    margin-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .footer__link {
-    padding-block-end: 0.5rem;
-    color: var(--text-muted);
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: color 0.3s ease;
-    position: relative;
+  padding-block-end: 0.5rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  position: relative;
 }
 
 .footer__link:hover {
@@ -219,6 +219,15 @@ a {
   to {
     opacity: 1;
   }
+}
+
+/* Work card animation */
+.work__card.animate-left {
+  animation: slide-left 0.9s ease-out forwards;
+}
+
+.work__card.animate-right {
+  animation: slide-right 0.9s ease-out forwards;
 }
 
 @media (min-width: 768px) {

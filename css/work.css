@@ -5,7 +5,8 @@
 }
 
 .work__title {
-  font-size: clamp(1.6rem, 5vw, 2rem);
+  font-size: clamp(2.2rem, 6vw, 3.2rem);
+  line-height: 1.1;
   color: var(--text-main);
 }
 
@@ -62,7 +63,7 @@
   font-size: 0.8rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--accent);
 }
 
 @keyframes sweep {
@@ -92,16 +93,6 @@
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
-
-/* Work card animation */
-.work__card.animate-left {
-  animation: slide-left 0.9s ease-out forwards;
-}
-
-.work__card.animate-right {
-  animation: slide-right 0.9s ease-out forwards;
-}
-
 
 /* Media */
 .work__media {

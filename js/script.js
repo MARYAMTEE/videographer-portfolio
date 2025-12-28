@@ -18,3 +18,8 @@ navLink.forEach(link => {
         nav.classList.remove("toggle");
     });
 });
+
+// ABOUT PAGE ANIMATION
+document.querySelectorAll(".about__card").forEach(card => {
+  card.style.opacity = 1;
+});
