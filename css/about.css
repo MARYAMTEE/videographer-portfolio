@@ -13,13 +13,13 @@
 
 .about__image-wrap {
   position: relative;
-  max-width: 320px;
+  max-width: 20rem;
   margin: 0 auto;
 }
 
 .about__image-wrap img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   z-index: 2;
   position: relative;
 }
@@ -28,7 +28,7 @@
   position: absolute;
   inset: -15px;
   background: var(--accent-soft);
-  filter: blur(40px);
+  filter: blur(2.5rem);
   z-index: 1;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .about__identity-text {
-  max-width: 600px;
+  max-width: 37.5rem;
   margin-top: 1.2rem;
   color: var(--text-muted);
 }
@@ -73,7 +73,7 @@
     var(--bg-soft),
     var(--bg-hover)
   );
-  border-radius: 16px;
+  border-radius: 1rem;
   padding: 2rem;
   opacity: 0;
 }
@@ -109,7 +109,7 @@
   background: var(--accent);
   color: #000;
   padding: 1rem 2.2rem;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   text-decoration: none;
   font-weight: 600;
 }
@@ -135,7 +135,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 /* RESPONSIVE */
 @media (min-width: 768px) {

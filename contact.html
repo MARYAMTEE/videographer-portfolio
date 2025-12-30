@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Mobile Videographer</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/contact.css"/>
+    <!-- JS -->
+    <script src="./js/script.js" defer></script>
+    <script src="./js/bookings.js" defer></script>
+
+    <!-- Material and fontaweon Icons links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="portfolio__header">
+        <div class="porfolio__logo">IfeShotthis</div>
+
+        <button type="button" class="portfolio__nav portfolio__nav--open" aria-label="Navigation icon">
+            <i class="fa-solid fa-list-check nav__open"></i>
+        </button>
+
+        <!-- NAV -->
+        <nav class="nav">
+        <button type="button" class="portfolio__nav portfolio__nav--close" aria-label="Navigation icon">
+            <i class="fas fa-times nav__close" aria-hidden="true"></i>
+        </button>
+
+        <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="work.html" class="nav__link">Work</a></li>
+            <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+            <li class="nav__item active"><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main class="contact">
+
+        <!-- HERO -->
+        <section class="contact__hero">
+            <h1>Let's create something<br><span>worth watching.</span></h1>
+            <p>Got a project, brand, event, or idea? Drop the details, let's talk visuals.</p>
+        </section>
+
+        <!-- DECOR STRIP -->
+        <section class="contact__strip">
+            <span>Mobile Videography</span>
+            <span>Creative Direction</span>
+            <span>Editing</span>
+            <span>High-Quality Delivery</span>
+        </section>
+
+        <!-- FORM -->
+        <section class="contact__form-section">
+            <form class="contact__form">
+            
+                <div class="form__group">
+                    <input type="text" name="name" class="input" placeholder="Your name" required />
+                </div>
+
+                <div class="form__group">
+                    <input type="email" name="email" class="input" placeholder="Email address" required />
+                </div>
+
+                <div class="form__row">
+                    <div class="form__group">
+                        <input type="text" class="input" name="project" placeholder="Project type (event, brand, content…)" required />
+                    </div>
+
+                    <div class="form__group">
+                        <input type="date" class="input" id="bookingDate" name="date" required />
+                    </div>
+
+                    <div class="form__group">
+                        <input type="time" class="input" id="bookingTime" name="time" required />
+                    </div>
+                </div>
+
+                <p class="date__warning" id="dateWarning">This date is already booked. Please choose another.</p>
+
+                <div class="form__group">
+                    <textarea name="message" class="form__textarea" placeholder="Tell me about the project"></textarea>
+                </div>
+
+                <button type="submit" class="btn__primary">Send details →</button>
+            </form>
+        </section>
+
+        <!-- DIRECT CONTACT -->
+        <section class="contact__direct">
+            <p>Prefer something quicker?</p>
+
+            <div class="contact__links">
+            <a href="mailto:ayorindemaryam83@gmail.com">Email</a>
+            <a href="https://wa.me/234XXXXXXXXX" target="_blank">WhatsApp</a>
+            <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+
+        <div class="footer__brand">
+            <h3 class="footer__logo">ife.shot.this</h3>
+            <p class="footer__tagline">
+            Mobile videography focused on story, clarity, and uncompromised quality.
+            </p>
+        </div>
+
+        <div class="footer__links">
+            <ul class="footer__list">
+            <li class="footer__item"><a href="index.html" class="footer__link">Home</a></li>
+            <li class="footer__item"><a href="work.html" class="footer__link">Work</a></li>
+            <li class="footer__item"><a href="about.html" class="footer__link">About</a></li>
+            <li class="footer__item"><a href="contact.html" class="footer__link">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__cta">
+            <p class="footer__cta-text">Have a project in mind?</p>
+            <a href="#" class="footer__button">Start a conversation</a>
+        </div>
+
+        </div>
+
+        <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 ife.shot.this. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
