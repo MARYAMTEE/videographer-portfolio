@@ -86,15 +86,13 @@ textarea:-webkit-autofill {
 .form__row {
   display: grid;
   gap: 1.2rem;
+  align-items: flex-start;
 }
 
 .form__group input[type="date"],
 .form__group input[type="time"] {
   color: var(--text-main);
   color-scheme: dark;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .date__warning {
@@ -172,5 +170,9 @@ textarea:-webkit-autofill {
   .form__row {
     grid-template-columns: 1.5fr 1fr 1fr;
     align-items: center;
+  }
+
+  #project {
+    margin-top: 1.5rem;
   }
 }
