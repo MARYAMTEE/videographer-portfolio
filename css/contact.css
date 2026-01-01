@@ -67,7 +67,7 @@
 
 .form__group textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 7.5rem;
 }
 
 .form__group input:focus,
@@ -83,9 +83,9 @@
 
 .form__group input[type="date"],
 .form__group input[type="time"] {
-  font-size: 1rem;
   color: var(--text-muted);
   color-scheme: dark;
+  text-align: left;
 }
 
 .date__warning {
