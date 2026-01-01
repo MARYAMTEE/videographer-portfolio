@@ -1,6 +1,9 @@
 /* Header */
+.main {
+  padding: 4rem 1.25rem;
+}
 .work__header {
-  padding: 3rem 1.25rem 1.5rem;
+  padding-block-end: 1.5rem;
   background-color: var(--bg);
 }
 
@@ -88,7 +91,6 @@
 }
 /* Gallery */
 .work__gallery {
-  padding: 3rem 1.25rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.25rem;
