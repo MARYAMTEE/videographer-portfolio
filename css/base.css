@@ -19,6 +19,11 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+
   .card {
     animation: none;
     opacity: 1;
@@ -62,7 +67,7 @@ a {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transform: translateX(100%);
-  transition: transform var(--transition-slow) ease-in-out;
+  transition: transform 0.5s ease-in-out;
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -70,7 +75,7 @@ a {
 }
 
 .nav.toggle{
-    transform: translateX(0);
+  transform: translateX(0);
 }
 
 .nav__list{
