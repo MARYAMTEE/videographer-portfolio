@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   width: 100%;
   max-width: 43.75rem;
   margin-inline: auto;
@@ -19,7 +19,7 @@
   animation: fadeUp 0.8s ease forwards;
 }
 
-.hero-text {
+.hero__text {
   width: 100%;
   max-width: 31.25rem;
   margin-block-start: 1rem;
@@ -32,7 +32,7 @@
     text-align: center;
 }
 
-.hero-cta {
+.hero__cta {
   margin-top: 1.5rem;
   display: inline-block;
   padding: 0.85rem 1.4rem;
@@ -68,12 +68,12 @@
   background: var(--bg-soft);
 }
 
-.section-title {
+.section__title {
   font-size: clamp(1.6rem, 5vw, 2rem);
   margin-bottom: 1.5rem;
 }
 
-.services-grid {
+.services__grid {
   display: grid;
   gap: 1rem;
 }
@@ -246,7 +246,7 @@
     padding-block: 4rem;
   } 
 
-  .services-grid {
+  .services__grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -298,12 +298,8 @@
     padding: 6rem 2rem;
   }
 
-  .services-grid {
+  .services__grid {
     gap: 2rem;
-  }
-
-  .nav {
-    padding: 1.25rem 4rem;
   }
   
   .card {
