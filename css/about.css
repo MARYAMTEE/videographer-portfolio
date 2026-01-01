@@ -17,7 +17,7 @@
   margin: 0 auto;
 }
 
-.about__image-wrap img {
+.about__img {
   width: 100%;
   border-radius: 1.25rem;
   z-index: 2;

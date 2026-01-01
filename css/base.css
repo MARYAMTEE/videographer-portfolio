@@ -227,11 +227,11 @@ a {
 }
 
 /* Work card animation */
-.work__card.animate-left {
+.animate-left {
   animation: slide-left 0.9s ease-out forwards;
 }
 
-.work__card.animate-right {
+.animate-right {
   animation: slide-right 0.9s ease-out forwards;
 }
 
