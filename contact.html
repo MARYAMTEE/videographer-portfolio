@@ -58,34 +58,43 @@
             <form class="contact__form">
             
                 <div class="form__group">
-                    <input type="text" name="name" class="input" placeholder="Your name" required />
+                    <input type="text" name="name" id="name" class="input" placeholder="Your name" autocomplete="name" required />
                 </div>
 
                 <div class="form__group">
-                    <input type="email" name="email" class="input" placeholder="Email address" required />
+                    <input type="email" name="email" id="email" class="input" placeholder="Email address" autocomplete="email" required />
                 </div>
 
                 <div class="form__row">
                     <div class="form__group">
-                        <input type="text" class="input" name="project" placeholder="Project type (event, brand, content…)" required />
+                        <input type="text" class="input" id="project" name="project" placeholder="Project type (event, brand, content…)" required />
                     </div>
 
                     <div class="form__group">
-                        <input type="date" class="input" id="bookingDate" name="date" required />
+                        <div class="date-field">
+                            <input type="text" class="date__display" placeholder="Date" readonly />
+                            <input type="date" class="input" id="bookingDate" name="date" autocomplete="off" required />
+                        </div>
                     </div>
 
                     <div class="form__group">
-                        <input type="time" class="input" id="bookingTime" name="time" required />
+                        <div class="time__field">
+                            <input type="text" class="time__display" placeholder="Time" readonly />
+                            <input type="time" class="input" id="bookingTime" name="time" required />
+                        </div>
                     </div>
                 </div>
 
                 <p class="date__warning" id="dateWarning">This date is already booked. Please choose another.</p>
 
                 <div class="form__group">
-                    <textarea name="message" class="form__textarea" placeholder="Tell me about the project"></textarea>
+                    <textarea name="message" class="form__textarea" placeholder="Tell me about the project" autocomplete="off"></textarea>
                 </div>
 
-                <button type="submit" class="btn__primary">Send details →</button>
+                <button type="submit" class="btn__primary">
+                    <span>Send details</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
             </form>
         </section>
 

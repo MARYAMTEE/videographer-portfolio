@@ -1,5 +1,5 @@
 const dateInput = document.getElementById("bookingDate");
-const submitBtn = document.querySelector(".btn-primary");
+const submitBtn = document.querySelector(".btn__primary");
 const warning = document.getElementById("dateWarning");
 
 let bookedDates = [];
