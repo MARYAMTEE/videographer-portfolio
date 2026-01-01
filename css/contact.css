@@ -54,8 +54,8 @@
   gap: 1.5rem;
 }
 
-.form__group .input,
-.form__group .form__textarea {
+.input,
+.form__textarea {
   width: 100%;
   background: transparent;
   border: none;
@@ -63,6 +63,13 @@
   padding: 0.8rem 0;
   color: var(--text-main);
   font-size: 1rem;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-text-fill-color: var(--text-main);
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .form__group textarea {
@@ -83,9 +90,11 @@
 
 .form__group input[type="date"],
 .form__group input[type="time"] {
-  color: var(--text-muted);
+  color: var(--text-main);
   color-scheme: dark;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .date__warning {
@@ -97,6 +106,7 @@
 
 .date__display,
 .time__display {
+  font-size: 1rem;
   background-color: transparent;
   border: none;
   outline: none;
