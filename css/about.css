@@ -68,11 +68,7 @@
 }
 
 .about__card {
-  background: linear-gradient(
-    135deg,
-    var(--bg-soft),
-    var(--bg-hover)
-  );
+  background: linear-gradient(135deg, var(--bg-soft), var(--bg-hover));
   border-radius: 1rem;
   padding: 2rem;
   opacity: 0;
@@ -81,6 +77,10 @@
 .about__card-title {
   color: var(--accent);
   margin-bottom: 0.5rem;
+  line-height: 1.1;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
 }
 
 .about__card-text {
@@ -115,7 +115,7 @@
 }
 
 .service-icon {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .gradient-icon {
