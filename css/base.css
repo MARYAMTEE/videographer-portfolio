@@ -63,17 +63,17 @@ a {
 .portfolio__logo::before {
   content: "";
   position: absolute;
-  inset: -20px;
+  inset: -15px;
   background: radial-gradient(circle at center,rgba(255,255,255,0.25), transparent 65%);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(17px);
+  -webkit-backdrop-filter: blur(17px);
   opacity: 0.6;
   z-index: 1;
   pointer-events: none;
 }
 
 .logo--header{
-  height: 3.5rem;
+  height: 2.8rem;
 }
 
 .logo--footer {
@@ -88,7 +88,7 @@ a {
   background-color: var(--deep-plum);
   position: relative;
   top: 0;
-  padding: 1rem;
+  padding: 2rem;
   z-index: 1000;
 }
 
@@ -316,10 +316,6 @@ a {
 
   .nav__link {
     padding: 0.5rem 2rem;
-  }
-
-  .portfolio__header{
-    padding-inline: 3rem;
   }
 
   .nav-toggle { 
