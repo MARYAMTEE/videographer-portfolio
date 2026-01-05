@@ -155,7 +155,7 @@
 /* STACK IMAGES */
 .stack {
   position: relative;
-  height: 15rem;
+  height: 12rem;
   display: flex;
   justify-content: center;
 }
@@ -228,7 +228,7 @@
   font-size: 2rem;
   font-weight: 700;
   color: var(--accent-soft);
-  opacity: 0.4;
+  opacity: 0.9;
 }
 
 .process__step-title {
