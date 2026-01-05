@@ -45,6 +45,42 @@ a {
 }
 
 /* NAVIGATION */
+.portfolio__logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo {
+  width: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio__logo::before {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  background: radial-gradient(circle at center,rgba(255,255,255,0.25), transparent 65%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  opacity: 0.6;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.logo--header{
+  height: 2rem;
+}
+
+.logo--footer {
+  height: 2rem;
+  opacity: 0.85;
+}
+
 .portfolio__header{
   display: flex;
   justify-content: space-between;
@@ -236,6 +272,14 @@ a {
 }
 
 @media (min-width: 768px) {
+  .logo--header{
+    height: 2.8rem;
+  }
+
+  .logo--footer {
+    height: 3rem;
+  }
+
   .nav{
     position: relative;
     width: auto;
@@ -309,7 +353,7 @@ a {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--text-main);
+    background-color: var(--accent);
     transition: 0.5s width ease;
   }
 

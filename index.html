@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./css/style.css">
   <!-- JS -->
   <script src="./js/script.js" defer></script>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
 
   <!-- Material and fontaweon Icons links-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
@@ -16,7 +18,9 @@
 </head>
 <body>
   <header class="portfolio__header">
-    <div class="porfolio__logo">IfeShotthis</div>
+    <div class="portfolio__logo">
+      <img src="./assets/images/logo.png" alt="Logo Image" class="logo logo--header">
+    </div>
 
     <button type="button" class="portfolio__nav portfolio__nav--open" aria-label="Navigation icon">
         <i class="fa-solid fa-list-check nav__open"></i>
@@ -60,57 +64,75 @@
   
     <!-- SERVICES -->
     <section class="services">
-      <h2 class="section__title">What I Do</h2>
+      <header class="services__header">
+        <span class="section__tag">Services</span>
+        <h2 class="services__title">High-Quality Sound <br />And Video Services</h2>
+      </header>
+
       <div class="services__grid">
-        <div class="service">
+        <article class="service">
           <span class="material-icons-outlined service__icon">smartphone</span>
-          <h3 class="service-title">Mobile Videography</h3>
-          <p class="service-text">High-quality videos shot entirely on mobile, focused on storytelling, clarity, and visuals that feel authentic, modern, and scroll-stopping.</p>
-        </div>
+          <h3 class="service__title">Mobile Videography</h3>
+          <p class="service__text">High-quality storytelling videos shot on mobile with professional composition and lighting.</p>
+          <a href="about.html" class="service__link">
+            Learn more
+            <i class="fa-solid fa-arrow-right service__link-icon"></i>
+          </a>
+        </article>
 
-        <div class="service">
+        <article class="service is-active">
           <span class="material-icons-outlined service__icon">auto_fix_high</span>
-          <h3 class="service-title">Creative Editing</h3>
-          <p class="service-text">Thoughtful edits that bring footage to life. Clean cuts, smooth pacing, color balance, and creative touches that elevate the final story.</p>
-        </div>
+          <h3 class="service__title">Creative Editing</h3>
+          <p class="service__text">Clean cuts, smooth pacing, color balance, and creative touches that elevate every frame.</p>
+          <a href="about.html" class="service__link">
+            Learn more
+            <i class="fa-solid fa-arrow-right service__link-icon"></i>
+          </a>
+        </article>
 
-        <div class="service">
+        <article class="service">
           <span class="material-icons-outlined service__icon">palette</span>
-          <h3 class="service-title">Short-form Content</h3>
-          <p class="service-text">Short-form, platform-ready content designed for attention, engagement, and impact across social media and digital spaces.</p>
-        </div>
+          <h3 class="service__title">Short-form Content</h3>
+          <p class="service__text">Platform-ready reels and shorts designed to grab attention and keep viewers watching.</p>
+          <a href="about.html" class="service__link">
+            Learn more
+            <i class="fa-solid fa-arrow-right service__link-icon"></i>
+          </a>
+        </article>
       </div>
     </section>
 
+    <!-- PROCESS -->
     <section class="process" id="process">
-      <div class="process__header">
-        <h2 class="process__title">How I Work</h2>
-        <p class="process__subtitle">A simple, transparent workflow with quality preserved from shoot to preview.</p>
-      </div>
+      <header class="process__header">
+        <span class="section__tag">Process</span>
+        <h2 class="process__title">How the Work Gets <br>Done</h2>
+        <p class="process__subtitle">A clear workflow that keeps quality intact from shoot to delivery.</p>
+      </header>
 
       <div class="process__steps">
-        <div class="process__card">
-          <span class="process__number">01</span>
+        <div class="process__step">
+          <span class="process__index">01</span>
           <h3 class="process__step-title">Pre-Production</h3>
-          <p class="process__text">Understanding your story, goals, and the platforms your content is meant for</p>
+          <p class="process__step-text">Understanding your goals, story, and where the content will live.</p>
         </div>
 
-        <div class="process__card">
-          <span class="process__number">02</span>
+        <div class="process__step">
+          <span class="process__index">02</span>
           <h3 class="process__step-title">Mobile Filming</h3>
-          <p class="process__text">High-resolution mobile capture using professional techniques and controlled lighting.</p>
+          <p class="process__step-text">High-resolution capture using professional mobile techniques.</p>
         </div>
 
-        <div class="process__card">
-          <span class="process__number">03</span>
+        <div class="process__step">
+          <span class="process__index">03</span>
           <h3 class="process__step-title">Editing & Color</h3>
-          <p class="process__text">Clean edits and color grading optimized without sacrificing original quality.</p>
+          <p class="process__step-text">Clean edits, pacing, and grading without quality loss.</p>
         </div>
 
-        <div class="process__card">
-          <span class="process__number">04</span>
-          <h3 class="process__step-title">Featured Work</h3>
-          <p class="process__text">A curated selection of past projects presented to show real work.</p>
+        <div class="process__step">
+          <span class="process__index">04</span>
+          <h3 class="process__step-title">Delivery</h3>
+          <p class="process__step-text">Optimized files delivered ready for web and social platforms.</p>
         </div>
       </div>
     </section>
@@ -119,7 +141,10 @@
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__brand">
-        <h3 class="footer__logo">ife.shot.this</h3>
+        <div class="footer__logo">
+          <img src="./assets/images/logo.png" alt="Logo image" class="logo logo--footer">
+        </div>
+        
         <p class="footer__tagline">Mobile videography focused on story, clarity, and uncompromised quality.</p>
       </div>
 
