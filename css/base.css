@@ -32,7 +32,7 @@
 
 /* General styling */
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .process__subtitle,
@@ -281,7 +281,7 @@ a {
   animation: slide-right 0.9s ease-out forwards;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .logo--header{
     height: 4rem;
   }
@@ -368,7 +368,7 @@ a {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .nav {
     padding: 1.25rem 4rem;
   }

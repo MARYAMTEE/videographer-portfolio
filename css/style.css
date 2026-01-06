@@ -246,7 +246,7 @@
 }
 
   /* MEDIA QUERIES */
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .hero {
     padding-block: 4rem;
   } 
@@ -298,7 +298,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .hero {
     width: 100%;
     max-width: 68.75rem;

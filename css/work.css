@@ -134,7 +134,7 @@ video.work__media {
   color: var(--text-muted);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .work__gallery {
     grid-template-columns: repeat(2, 1fr);
     padding: 4rem 1.25rem;
@@ -146,7 +146,7 @@ video.work__media {
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .work__header{
     padding-inline: 2rem;
   }

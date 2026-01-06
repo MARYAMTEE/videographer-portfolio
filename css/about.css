@@ -284,7 +284,7 @@
 
 
 /* RESPONSIVE */
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .about__hero {
     grid-template-columns: 1fr 1fr;
   }
@@ -314,7 +314,7 @@
 
   .bio__decor-grid span {
     width: 6px;
-    height: 48px;
+    height: 3rem;
   }
 
   .bio__highlight {
@@ -323,9 +323,9 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
   .about__bio-grid {
-    grid-template-columns: minmax(0, 3fr) minmax(12px, 0.25fr) minmax(0, 2.5fr);
+    grid-template-columns: minmax(0, 3fr) minmax(0.75rem, 0.25fr) minmax(0, 2.5fr);
     gap: 0;
   }
 }

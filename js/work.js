@@ -20,7 +20,7 @@ fetch("data.json")
         
         if (file.type === "video") {
           card.innerHTML = `
-            <video class="work__media" src="${file.src}" controls preload="metadata" playsinline></video>
+            <video class="work__media" src="${file.src}" controls preload="metadata" loading="lazy" playsinline></video>
             <div class="work__caption">${client.title}</div>
           `;
         }

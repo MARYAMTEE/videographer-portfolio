@@ -6,7 +6,7 @@
 
 /* HERO */
 .contact__hero {
-  max-width: 700px;
+  max-width: 43.75rem;
   margin-bottom: 4rem;
 }
 
@@ -46,7 +46,7 @@
 .contact__form-section {
   background: linear-gradient(145deg,var(--bg-soft),var(--bg-hover));
   padding: 2.5rem;
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 
 .contact__form {
@@ -117,7 +117,7 @@ textarea:-webkit-autofill {
   background: var(--accent);
   color: var(--text-main);
   padding: 0.9rem 2.2rem;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   border: none;
   font-size: 1.2rem;
   font-weight: 500;
@@ -152,20 +152,20 @@ textarea:-webkit-autofill {
   gap: 1.5rem;
 }
 
-.contact__links a {
+.contact__links-socials{
   color: var(--accent);
   text-decoration: none;
   font-weight: 500;
 }
 
 /* DESKTOP */
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   .contact {
     padding: 6rem 4rem;
   }
 
   .contact__form-section {
-    max-width: 700px;
+    max-width: 43.75rem;
   }
 
   .form__row {
