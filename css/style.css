@@ -1,6 +1,6 @@
 /* HERO SECTION */
 .hero {
-  min-height: calc(100vh - 5rem);
+  min-height: calc(100vh - 6rem);
   padding: 0 1.25rem 0;
   display: flex;
   flex-direction: column;

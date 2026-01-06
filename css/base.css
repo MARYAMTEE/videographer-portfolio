@@ -30,19 +30,6 @@
   }
 }
 
-/* General styling */
-p {
-  font-size: 1.1rem;
-}
-
-.process__subtitle,
-.work__subtitle,
-.contact__hero-text,
-.contact__direct-text {
-  font-size: 1rem;
-}
-
-
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--bg);
@@ -100,7 +87,7 @@ a {
   background-color: var(--deep-plum);
   position: relative;
   top: 0;
-  padding: 2rem;
+  padding: 2rem 2rem 0;
   z-index: 1000;
 }
 
