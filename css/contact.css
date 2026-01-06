@@ -141,8 +141,8 @@ textarea:-webkit-autofill {
   text-align: center;
 }
 
-.contact__direct p {
-  color: var(--text-muted);
+.contact__direct-text {
+  color: var(--text-main);
   margin-bottom: 1rem;
 }
 

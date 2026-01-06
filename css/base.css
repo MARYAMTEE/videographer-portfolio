@@ -30,6 +30,18 @@
   }
 }
 
+/* General styling */
+p {
+  font-size: 1.2rem;
+}
+
+.process__subtitle,
+.work__subtitle,
+.contact__hero-text,
+.contact__direct-text {
+  font-size: 1rem;
+}
+
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
