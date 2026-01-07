@@ -23,3 +23,31 @@ navLink.forEach(link => {
 document.querySelectorAll(".about__card").forEach(card => {
   card.style.opacity = 1;
 });
+
+// TOGGLE LOGIC
+const toggleBtn = document.querySelector(".theme-toggle");
+const icon = toggleBtn.querySelector("i");
+
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme) {
+  document.documentElement.setAttribute("data-theme", savedTheme);
+  icon.className = savedTheme === "light"
+    ? "fa-solid fa-sun"
+    : "fa-solid fa-moon";
+}
+
+toggleBtn.addEventListener("click", () => {
+  const currentTheme = document.documentElement.getAttribute("data-theme");
+
+  if (currentTheme === "light") {
+    document.documentElement.removeAttribute("data-theme");
+    localStorage.setItem("theme", "dark");
+    icon.className = "fa-solid fa-moon";
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
+    icon.className = "fa-solid fa-sun";
+  }
+});
+
