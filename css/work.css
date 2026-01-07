@@ -89,7 +89,7 @@
   display: inline-block;
   width: 6px;
   height: 6px;
-  background: var(--accent);
+  background-color: var(--accent);
   border-radius: 50%;
   margin-left: 0.5rem;
 }

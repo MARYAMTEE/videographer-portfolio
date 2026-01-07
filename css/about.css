@@ -1,5 +1,5 @@
 .about {
-  background: var(--bg);
+  background-color: var(--bg);
   color: var(--text-main);
   padding: 4rem 1.25rem;
 }
@@ -27,7 +27,7 @@
 .accent-glow {
   position: absolute;
   inset: -15px;
-  background: var(--accent-soft);
+  background-color: var(--accent-soft);
   filter: blur(2.5rem);
   -webkit-filter: blur(2.5rem);
   z-index: 1;
@@ -70,7 +70,7 @@
 }
 
 .about__card {
-  background: linear-gradient(135deg, var(--bg-soft), var(--bg-hover));
+  background-image: linear-gradient(135deg, var(--bg-soft), var(--bg-hover));
   border-radius: 1rem;
   padding: 2rem;
   opacity: 0;
@@ -94,7 +94,7 @@
   margin: 4rem 0;
   padding: 2.5rem;
   border-left: 4px solid var(--accent);
-  background: var(--bg-soft);
+  background-color: var(--bg-soft);
 }
 
 .about__quality span {
@@ -108,7 +108,7 @@
 }
 
 .btn__primary {
-  background: var(--accent);
+  background-color: var(--accent);
   color: var(--text-main);
   padding: 1rem 2.2rem;
   border-radius: 1.875rem;
@@ -121,19 +121,22 @@
 }
 
 .gradient-icon {
-  background: linear-gradient(135deg,#FFD84D,#FFB703,#FF7A18,#FF3CAC);
+  background-image: linear-gradient(135deg,#FFD84D,#FFB703,#FF7A18,#FF3CAC);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .phone-gradient {
-  background: linear-gradient(135deg,#1f2933 0%,#374151 35%,#6b7280 70%,#9ca3af 100%);
+  background-image: linear-gradient(135deg,#1f2933 0%,#374151 35%,#6b7280 70%,#9ca3af 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .film-gradient {
-  background: linear-gradient(135deg,#0f172a 0%, #1f2937 40%,#dc2626 70%,#ef4444 100%);
+  background-image: linear-gradient(135deg,#0f172a 0%, #1f2937 40%,#dc2626 70%,#ef4444 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -147,7 +150,7 @@
   margin-bottom: 0.8rem;
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
-  background: var(--accent-soft);
+  background-color: var(--accent-soft);
   color: var(--accent);
   font-size: 0.75rem;
   font-weight: 600;
@@ -261,7 +264,7 @@
 }
 
 .about__service-card {
-  background: linear-gradient(135deg, var(--bg-soft), var(--bg-hover));
+  background-image: linear-gradient(135deg, var(--bg-soft), var(--bg-hover));
   padding: 1.8rem;
   border-radius: 1.2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
