@@ -20,7 +20,13 @@ fetch("data.json")
         
         if (file.type === "video") {
           card.innerHTML = `
-            <video class="work__media" src="${file.src}" poster="${file.poster}" controls preload="metadata" playsinline muted></video>
+          <a href="${file.src}" target="_blank" class="video-link">
+            <div class="video__wrapper">
+              <img src="${file.poster}" alt="${client.title}" class="work__media">
+              <div class="play__overlay">
+                <i class="fa-solid fa-play play__overlay-content"></i>
+              </div>
+            </div>
             <div class="work__caption">${client.title}</div>
           `;
         }
