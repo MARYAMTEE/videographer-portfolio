@@ -20,7 +20,9 @@ fetch("data.json")
         
         if (file.type === "video") {
           card.innerHTML = `
-            <video class="work__media" poster="${file.poster}" src="${file.src}" controls preload="none" playsinline></video>
+            <video class="work__media" poster="${file.poster}" controls preload="none" playsinline>
+            <source src="${file.src}" type="video/mp4">
+            </video>
             <div class="work__caption">${client.title}</div>
           `;
         }
@@ -41,13 +43,14 @@ fetch("data.json")
     console.error(err);
   });
 
-  document.addEventListener("click", (e) => {
-  const video = e.target.closest("video");
-  if (!video) return;
+  document.querySelectorAll(".work__media").forEach(video => {
+  video.addEventListener("click", () => {
+    if (video.paused) {
+      document.querySelectorAll(".work__media").forEach(v => {
+        if (v !== video) v.pause();
+      });
 
-  if (!video.src) {
-    video.src = video.dataset.src;
-    video.load();
-    video.play();
-  }
+      video.play();
+    }
+  });
 });
