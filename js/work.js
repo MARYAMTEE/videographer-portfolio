@@ -20,7 +20,7 @@ fetch("data.json")
         
         if (file.type === "video") {
           card.innerHTML = `
-            <video class="work__media" src="${file.src}" controls preload="metadata" loading="lazy" playsinline></video>
+            <video class="work__media" poster="${file.poster}" src="${file.src}" controls preload="none" playsinline></video>
             <div class="work__caption">${client.title}</div>
           `;
         }
@@ -40,3 +40,14 @@ fetch("data.json")
     gallery.innerHTML = "<p>Unable to load work.</p>";
     console.error(err);
   });
+
+  document.addEventListener("click", (e) => {
+  const video = e.target.closest("video");
+  if (!video) return;
+
+  if (!video.src) {
+    video.src = video.dataset.src;
+    video.load();
+    video.play();
+  }
+});
