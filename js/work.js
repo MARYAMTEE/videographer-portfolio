@@ -20,13 +20,14 @@ fetch("data.json")
         
         if (file.type === "video") {
           card.innerHTML = `
-          <a href="${file.src}" target="_blank" class="video-link">
+          <a href="${file.src}" target="_blank" class="video__link">
             <div class="video__wrapper">
               <img src="${file.poster}" alt="${client.title}" class="work__media">
               <div class="play__overlay">
                 <i class="fa-solid fa-play play__overlay-content"></i>
               </div>
             </div>
+          </a>
             <div class="work__caption">${client.title}</div>
           `;
         }
@@ -37,7 +38,6 @@ fetch("data.json")
             <div class="work__caption">${client.title}</div>
           `;
         }
-
         gallery.appendChild(card);
       });
     });
