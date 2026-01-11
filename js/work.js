@@ -20,7 +20,7 @@ fetch("data.json")
         
         if (file.type === "video") {
           card.innerHTML = `
-            <video class="work__media" poster="${file.poster}" controls preload="none" playsinline>
+            <video class="work__media" poster="${file.poster}" controls preload="none" playsinline muted>
             <source src="${file.src}" type="video/mp4">
             </video>
             <div class="work__caption">${client.title}</div>
@@ -42,15 +42,3 @@ fetch("data.json")
     gallery.innerHTML = "<p>Unable to load work.</p>";
     console.error(err);
   });
-
-  document.querySelectorAll(".work__media").forEach(video => {
-  video.addEventListener("click", () => {
-    if (video.paused) {
-      document.querySelectorAll(".work__media").forEach(v => {
-        if (v !== video) v.pause();
-      });
-
-      video.play();
-    }
-  });
-});
