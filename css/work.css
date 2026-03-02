@@ -119,13 +119,12 @@
 /* Media */
 .work__media {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
   display: block;
   height: auto;
   border-radius: 6px;
-}
-
-video.work__media {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 5;
 }
 
 
